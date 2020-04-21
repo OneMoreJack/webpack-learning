@@ -1,5 +1,6 @@
 import * as R from 'ramda'
 import './style.css'
+import './style.scss'
 
 function component() {
   const ele = document.createElement('div')
