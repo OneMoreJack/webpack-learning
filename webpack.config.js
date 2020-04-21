@@ -19,6 +19,18 @@ module.exports = {
           // Compiles Sass to CSS
           'sass-loader',
         ]
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              publicPath: './dist/images',
+              outputPath: 'images/'
+            }
+          }
+        ]
       }
     ]
   }
